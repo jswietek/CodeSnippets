@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>DbSet</Title>
+			<Author>Jakub Świętek</Author>
+			<Description>Adds a public DbSet<T> property</Description>
+			<Shortcut>dbset</Shortcut>
+        </Header>
+        <Snippet>
+			<Declarations>
+				<Literal>
+				  <ID>DbSetType</ID>
+				  <ToolTip>Enter the DbSet's type</ToolTip>
+				  <Default>object</Default>
+				</Literal>
+			</Declarations>
+			
+			<References>
+				<Reference>
+					<Assembly>EntityFramework.dll</Assembly>
+				</Reference>
+			</References>
+			<Imports>
+				<Import>
+					<Namespace>System.Data.Entity</Namespace>
+				</Import>
+			</Imports>
+		
+            <Code Language="CSharp">
+                <![CDATA[public virtual DbSet<$PropertyType$> $PropertyType$s { get; set; }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
