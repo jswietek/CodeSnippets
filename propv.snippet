@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Virtual Property</Title>
+			<Author>Jakub Świętek</Author>
+			<Description>Adds a public virtual property</Description>
+			<Shortcut>propv</Shortcut>
+        </Header>
+        <Snippet>
+			<Declarations>
+				<Literal>
+				  <ID>PropertyName</ID>
+				  <ToolTip>Enter the property name</ToolTip>
+				  <Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+				  <ID>PropertyType</ID>
+				  <ToolTip>Enter the property type</ToolTip>
+				  <Default>int</Default>
+				</Literal>
+			</Declarations>
+		
+            <Code Language="CSharp">
+                <![CDATA[public virtual $PropertyType$ $PropertyName$ { get; set; }]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
